@@ -1,12 +1,15 @@
-import { Link } from 'react-router-dom'
 const Menu = () => {
   return (
     <>
-      <nav>
-        <img className='nav__logo' src='../img/logo-portfolio.svg' />
-        <Link to='/'>Proyectos</Link>
-        <Link to='/sobre-mi'>Sobre Mi</Link>
-        <Link to='/tecnologias'>Tecnologías</Link>
+      <nav id='nav'>
+        <div className='nav__wrapper'>
+          <a href='/'><img className='nav__logo' src='../img/logo-portfolio.svg' /></a>
+          <div>
+            <a className='nav__a' href='#about'>Sobre Mi</a>
+            <a className='nav__a' href='#proyects'>Proyectos</a>
+            <a className='nav__a' href='#contact'>Contacto</a>
+          </div>
+        </div>
       </nav>
     </>
   )
