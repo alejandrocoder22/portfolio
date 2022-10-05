@@ -44,9 +44,9 @@ const Contact = () => {
             <div> <AiOutlineMail className='contact-section__email-svg' /></div>
           </div>
           <div className='contact-section__links'>
-            <div className='contact-section__link'> <AiFillGithub /></div>
-            <div className='contact-section__link'><AiFillLinkedin /></div>
-
+            <a href='https://github.com/alejandrocoder22/' rel=' noreferrer noopener ' target='_blank' className='contact-section__link'> <AiFillGithub /></a>
+            <a href='https://linkedin.com/in/alejandrocoder' rel=' noreferrer noopener ' target='_blank' className='contact-section__link'> <AiFillLinkedin />
+            </a>
           </div>
         </div>
       </div>

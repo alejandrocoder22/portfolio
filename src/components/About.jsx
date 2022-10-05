@@ -1,3 +1,4 @@
+import aboutImage from '../images/intro-photo.jpg'
 
 const About = () => {
   return (
@@ -34,7 +35,7 @@ const About = () => {
           </div>
 
           <div className='about-section__right'>
-            <img className='about-section__img' src='../img/intro-photo.jpg' />
+            <img className='about-section__img' src={aboutImage} />
           </div>
         </div>
 

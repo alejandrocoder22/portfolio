@@ -13,17 +13,20 @@ const Proyectos = () => {
               <div key={proyect.id} className='proyects__project'>
                 <img className='proyects__img' src={proyect.imgUrl} />
                 <div className='proyects__links-container'>
+                  {
+                    proyect.githubUrl && (
+                      <a href='/'>
+                        <AiFillGithub className='proyects__preview-icon' />
+                      </a>
+                    )
+                  }
 
-                  <a href='/'>
-                    <AiFillGithub className='proyects__preview-icon' />
-                  </a>
                   <a href='/'>
                     <FiLink className='proyects__preview-icon' />
                   </a>
                   <a href={`/proyect/${proyect.id}`}>
                     <AiOutlinePlus className='proyects__preview-icon' />
                   </a>
-
                 </div>
               </div>
             )

@@ -1,3 +1,4 @@
+import introImage from '../images/intro-img.svg'
 
 const Intro = () => {
   return (
@@ -8,13 +9,13 @@ const Intro = () => {
         </div>
         <div className='intro__animation-bottom'>
           <h2 className='intro__h2'>Transformando las ideas en proyectos</h2>
-          <button className='intro__button'>Contáctame</button>
+          <a href='#contact'><button className='intro__button'>Contáctame</button></a>
           <button className='intro__button intro__button-darker'>Curriculo</button>
 
         </div>
       </div>
       <div className='intro__right'>
-        <img className='intro__img' src='../img/intro-img.svg' />
+        <img className='intro__img' src={introImage} />
       </div>
 
     </div>
