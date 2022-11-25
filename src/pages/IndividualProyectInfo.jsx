@@ -5,6 +5,7 @@ import proyects from '../data/proyects'
 
 import { FiLink } from 'react-icons/fi'
 import { AiFillGithub } from 'react-icons/Ai'
+import Menu from '../components/Menu'
 
 const IndividualProyectInfo = () => {
   const { id } = useParams()
@@ -21,8 +22,9 @@ const IndividualProyectInfo = () => {
 
   return (
     <>
+      <Menu />
       {singleProyect && (
-        <main className='individual-proyect'>
+        <main className='individual-proyect wrapper '>
 
           <h1 className='individual-proyect__h1'>{singleProyect[0].title}</h1>
           <img className='individual-proyect__img' src={singleProyect[0].imgUrlLarge} />
@@ -30,15 +32,15 @@ const IndividualProyectInfo = () => {
           <p className='individual-proyect__p'>{singleProyect[0].objetive}</p>
           <h2 className='individual-proyect__h2'>Tecnologías</h2>
           <ul>
-            {singleProyect[0].techs.map(tech => <li className='individual-proyect__li' key={tech}>{tech}</li>
+            {singleProyect[0].techs.map(tech => <li className='individual-proyect__li bml' key={tech}>{tech}</li>
             )}
           </ul>
           <h2 className='individual-proyect__h2'>Funcionalidades</h2>
           <ul>
-            {singleProyect[0].functions.map(func => <li className='individual-proyect__li' key={func}>{func}</li>
+            {singleProyect[0].functions.map(func => <li className='individual-proyect__li bml' key={func}>{func}</li>
             )}
           </ul>
-          <div className='individual-proyect__container-svgs'>
+          <div className='individual-proyect__container-svgs mt-1'>
             <a href={singleProyect[0].webUrl} target='_blank' rel='noreferrer noopener'>  <FiLink className='individual-proyect__svg' /></a>
             <a href={singleProyect[0].githubUrl} target='_blank' rel='noreferrer noopener'>  <AiFillGithub className='individual-proyect__svg' /></a>
           </div>

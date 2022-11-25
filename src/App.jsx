@@ -21,7 +21,6 @@ function App () {
   return (
 
     <BrowserRouter>
-      <Menu />
       <Routes>
         <Route path='/' element={<Landing />} />
         <Route path='/proyect/:id' element={<IndividualProyectInfo />} />
