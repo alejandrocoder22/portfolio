@@ -9,7 +9,7 @@ const proyects = [
     title: 'Stock App',
     imgUrl: proyectOneImage,
     imgUrlLarge: proyectOneImage,
-    githubUrl: '',
+    githubUrl: 'https://github.com/alejandrocoder22/stock-app',
     webUrl: 'https://centralserverapi.com',
     objetive: 'Crear una aplicación versátil para facilitar el control y valoración de empresas',
     techs: ['React', 'PostgreSQL', 'Express', 'Puppeteer'],
@@ -32,7 +32,7 @@ const proyects = [
     imgUrl: proyectThreeImage,
     imgUrlLarge: proyectThreeImage,
     githubUrl: 'https://github.com/alejandrocoder22/books-reviews',
-    webUrl: '',
+    webUrl: 'https://books.alejandrocoder.com/',
     objetive: 'Aprender a utilizar Redux',
     techs: ['React', 'PostgreSQL', 'Express', 'Redux'],
     functions: ['Funciones CRUD de usuarios y reviews de libros']
