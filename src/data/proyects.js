@@ -17,17 +17,6 @@ const proyects = [
   },
   {
     id: 2,
-    title: 'Clothes e-commerce',
-    imgUrl: proyectTwoImage,
-    imgUrlLarge: proyectTwoImage,
-    githubUrl: 'https://github.com/alejandrocoder22/ecommerce-react',
-    webUrl: 'https://ecommerce.alejandrocoder.com/',
-    objetive: 'Aprender el funcionamiento de una tenda de ropa implementando la pasarela de pagos, lógica del negocio y utilizando herramientas de terceros (firebase) para hostear las imágenes.',
-    techs: ['React', 'PostgreSQL', 'Express', 'Stripe', 'Firebase'],
-    functions: ['Pasarela de pagos', 'Carrito de la compra', 'Panel de administrador con funciones CRUD']
-  },
-  {
-    id: 3,
     title: 'Book Review App',
     imgUrl: proyectThreeImage,
     imgUrlLarge: proyectThreeImage,
@@ -38,7 +27,7 @@ const proyects = [
     functions: ['Funciones CRUD de usuarios y reviews de libros']
   },
   {
-    id: 4,
+    id: 3,
     title: 'Images Share App',
     imgUrl: proyectFourImage,
     imgUrlLarge: proyectFourImage,
