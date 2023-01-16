@@ -5,8 +5,6 @@ import {
   Route
 } from 'react-router-dom'
 import ErrorPage from './pages/ErrorPage'
-import IndividualProyectInfo from './pages/IndividualProyectInfo'
-import Menu from './components/Menu'
 import Landing from './pages/Landing'
 import { useEffect } from 'react'
 
@@ -23,7 +21,6 @@ function App () {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Landing />} />
-        <Route path='/proyect/:id' element={<IndividualProyectInfo />} />
         <Route path='*' element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
