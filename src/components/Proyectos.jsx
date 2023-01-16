@@ -1,5 +1,5 @@
 import proyects from '../data/proyects'
-import { AiFillGithub, AiOutlinePlus } from 'react-icons/Ai'
+import { AiFillGithub } from 'react-icons/Ai'
 import { FiLink } from 'react-icons/fi'
 
 const Proyectos = () => {
@@ -22,9 +22,6 @@ const Proyectos = () => {
                   }
                   <a href={proyect.webUrl} target='_blank' rel='noopener noreferrer'>
                     <FiLink className='proyects__preview-icon ' />
-                  </a>
-                  <a href={`/proyect/${proyect.id}`} rel='noopener noreferrer'>
-                    <AiOutlinePlus className='proyects__preview-icon' />
                   </a>
                 </div>
               </div>
