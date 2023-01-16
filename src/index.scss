@@ -10,6 +10,7 @@ $deep-color: #2a2b35;
 $paragraph-font-family: "Open Sans", sans-serif;
 $emphasis-color: #ff7a00;
 $emphasis-color-darker: #e3a770;
+$button-color-hover: #fa9b42;
 html {
   scroll-behavior: smooth;
 }
@@ -51,15 +52,21 @@ h2 {
 }
 input {
   outline: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 2px;
 }
 textarea {
   min-height: 10rem;
   outline: none;
+  border-radius: 2px;
+  padding: 0.25rem 0.5rem;
 }
 body {
   background-color: $main-color;
 }
+
 // Margins and Paddings
+
 .sml {
   margin-left: 0.25rem;
 }
@@ -163,9 +170,13 @@ body {
     cursor: pointer;
     font-family: $font-family;
   }
+  &__button:hover {
+    background-color: $button-color-hover;
+  }
   &__button-darker {
     background-color: $emphasis-color-darker;
   }
+
   &__right {
     display: block;
     height: 100%;
@@ -272,6 +283,9 @@ body {
     color: white;
     border-radius: 0.1rem;
     cursor: pointer;
+  }
+  &__button:hover {
+    background-color: $button-color-hover;
   }
   &__email {
     display: flex;
@@ -466,10 +480,15 @@ body {
       gap: 1rem;
     }
   }
-  .about-section__container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  .about-section {
+    &__img {
+      margin: 0 auto;
+    }
+    &__container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
   .about-section__left,
   .about-section__right,
