@@ -46,7 +46,7 @@ const Contact = () => {
           <label className='contact-section__label' name='message'>Mensaje</label>
           <textarea onChange={(e) => onHandleForm(e)} value={form.message} required name='message' />
           <div className='contact-section__button-wrapper mt-1'>
-            <button className='contact-section__button '>Enviar</button>
+            <button className='contact-section__button '>Enviar Mensaje</button>
             {emailPopup.length > 0 && <EmailConfirmationPopup msg={emailPopup} />}
           </div>
         </form>
