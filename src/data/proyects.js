@@ -1,5 +1,5 @@
 import proyectOneImage from '../images/proyect-1.jpg'
-import proyectTwoImage from '../images/proyect-2.jpg'
+import proyectTwo from '../images/proyect-2.png'
 import proyectThreeImage from '../images/proyect-3.jpg'
 import proyectFourImage from '../images/proyect-4.jpg'
 
@@ -33,6 +33,17 @@ const proyects = [
     imgUrlLarge: proyectFourImage,
     githubUrl: 'https://github.com/alejandrocoder22/images-share-app',
     webUrl: 'https://images.alejandrocoder.com/',
+    objetive: 'Aprender a gestionar archivos con multer e implementar typescript en un proyecto.',
+    techs: ['React', 'PostgreSQL', 'Express', 'Multer'],
+    functions: ['Alojar imágenes y compartir su enlace', 'Modo oscuro', 'Autenticacion', 'Panel de usuario con las fotos alojadas', 'Validación de tamaño y formato']
+  },
+  {
+    id: 4,
+    title: 'Nutrition App',
+    imgUrl: proyectTwo,
+    imgUrlLarge: proyectTwo,
+    githubUrl: 'https://github.com/alejandrocoder22/nutritionApp',
+    webUrl: 'https://nutrition.alejandrocoder.com/',
     objetive: 'Aprender a gestionar archivos con multer e implementar typescript en un proyecto.',
     techs: ['React', 'PostgreSQL', 'Express', 'Multer'],
     functions: ['Alojar imágenes y compartir su enlace', 'Modo oscuro', 'Autenticacion', 'Panel de usuario con las fotos alojadas', 'Validación de tamaño y formato']
