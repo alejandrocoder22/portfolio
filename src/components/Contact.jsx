@@ -11,6 +11,7 @@ const Contact = () => {
   }
   const [form, setForm] = useState({ initialFormState })
   const [emailPopup, setEmailPopup] = useState('')
+  const [disabledButton, setDisabledButton] = useState(false)
 
   const onHandleForm = ({ target }) => {
     setForm({ ...form, [target.name]: target.value })
@@ -19,21 +20,22 @@ const Contact = () => {
   const onHandleSubmit = (e) => {
     e.preventDefault()
     setEmailPopup('Enviando mensaje...')
-
+    setDisabledButton(true)
     sendEmail(form)
       .then(response => response.json())
       .then(data => {
         if (data.status === 'OK') {
           setEmailPopup('Mensaje enviado')
+          setDisabledButton(false)
           setTimeout(() => setEmailPopup(''), 2500)
         } else {
           setEmailPopup('No se ha podido enviar el mensaje')
+          setDisabledButton(false)
         }
       })
 
     setForm(initialFormState)
   }
-
   return (
     <div className='contact-section wrapper'>
       <h2 id='contact'>Contacto</h2>
@@ -46,7 +48,7 @@ const Contact = () => {
           <label className='contact-section__label' name='message'>Mensaje</label>
           <textarea onChange={(e) => onHandleForm(e)} value={form.message} required name='message' />
           <div className='contact-section__button-wrapper mt-1'>
-            <button className='contact-section__button '>Enviar Mensaje</button>
+            <button disabled={disabledButton} className='contact-section__button '>Enviar Mensaje</button>
             {emailPopup.length > 0 && <EmailConfirmationPopup msg={emailPopup} />}
           </div>
         </form>
