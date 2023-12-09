@@ -142,6 +142,19 @@ body {
   height: calc(100vh - 13.875rem);
   overflow: hidden;
   color: white;
+  &__background-effect {
+    position: absolute;
+    left: -700px;
+    top: 0px;
+    height: 90%;
+  }
+
+  &__background-effect-right {
+    position: absolute;
+    right: -900px;
+    height: 75%;
+    bottom: -200px;
+  }
 
   &__wrapper {
     max-width: 50rem;
