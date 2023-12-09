@@ -9,7 +9,7 @@ const proyects = [
     title: 'Stock App',
     imgUrl: proyectOneImage,
     imgUrlLarge: proyectOneImage,
-    githubUrl: 'https://github.com/alejandrocoder22/stock-app',
+    githubUrl: '',
     webUrl: 'https://centralserverapi.com',
     objetive: 'Crear una aplicación versátil para facilitar el control y valoración de empresas',
     techs: ['React', 'PostgreSQL', 'Express', 'Puppeteer'],
