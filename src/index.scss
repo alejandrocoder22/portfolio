@@ -142,18 +142,21 @@ body {
   height: calc(100vh - 13.875rem);
   overflow: hidden;
   color: white;
+  position: relative;
   &__background-effect {
     position: absolute;
     left: -900px;
-    top: 100px;
+    top: 0px;
     height: 90%;
+    overflow-x: hidden;
   }
 
   &__background-effect-right {
     position: absolute;
-    right: -900px;
+    right: -700px;
     height: 75%;
     bottom: -200px;
+    overflow-x: hidden;
   }
 
   &__wrapper {
