@@ -1,4 +1,4 @@
-import { BsGithub, BsLinkedin } from 'react-icons/Bs'
+import { BsGithub, BsLinkedin } from 'react-icons/bs'
 
 const currentYear = new Date().getFullYear()
 const Footer = () => {
