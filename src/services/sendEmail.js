@@ -1,4 +1,4 @@
-const EMAIL_URL = 'https://email.centralserverapi.com'
+const EMAIL_URL = 'https://emailapi.alejandrocoder.com'
 
 export const sendEmail = (form) => {
   return fetch(EMAIL_URL, {
