@@ -1,4 +1,4 @@
-import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/Ai'
+import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai'
 import { useState } from 'react'
 import EmailConfirmationPopup from './EmailConfirmationPopup'
 import { sendEmail } from '../services/sendEmail'
