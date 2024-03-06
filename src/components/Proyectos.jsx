@@ -1,5 +1,5 @@
 import proyects from '../data/proyects'
-import { AiFillGithub } from 'react-icons/Ai'
+import { AiFillGithub } from 'react-icons/ai'
 import { FiLink } from 'react-icons/fi'
 
 const Proyectos = () => {
