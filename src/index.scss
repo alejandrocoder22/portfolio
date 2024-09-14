@@ -143,14 +143,6 @@ body {
   overflow: hidden;
   color: white;
   position: relative;
-  &__background-effect {
-    position: absolute;
-    left: -900px;
-    top: 0px;
-    height: 80%;
-    overflow-x: hidden;
-  }
-
   &__background-effect-right {
     position: absolute;
     right: -700px;
