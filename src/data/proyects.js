@@ -10,7 +10,7 @@ const proyects = [
     imgUrl: proyectOneImage,
     imgUrlLarge: proyectOneImage,
     githubUrl: '',
-    webUrl: 'https://centralserverapi.com',
+    webUrl: 'https://stocks.alejandrocoder.com',
     objetive: 'Crear una aplicación versátil para facilitar el control y valoración de empresas',
     techs: ['React', 'PostgreSQL', 'Express', 'Puppeteer'],
     functions: ['CRUD con todos los datos de las empresas', 'Scrapeo de datos que no proporcionan las APIS', 'Sistema de login con token', 'Automatización con CRON del precio a las 22:00 de lunes a viernes', 'Información extra individual de cada valor con datos visuales']
@@ -43,7 +43,7 @@ const proyects = [
     imgUrl: proyectTwo,
     imgUrlLarge: proyectTwo,
     githubUrl: 'https://github.com/alejandrocoder22/nutritionApp',
-    webUrl: 'https://nutrition.alejandrocoder.com/',
+    webUrl: 'https://calories.alejandrocoder.com/',
     objetive: 'Aprender a gestionar archivos con multer e implementar typescript en un proyecto.',
     techs: ['React', 'PostgreSQL', 'Express', 'Multer'],
     functions: ['Alojar imágenes y compartir su enlace', 'Modo oscuro', 'Autenticacion', 'Panel de usuario con las fotos alojadas', 'Validación de tamaño y formato']
