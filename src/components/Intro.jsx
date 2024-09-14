@@ -15,7 +15,6 @@ const Intro = () => {
       <div className='intro__right'>
         <img className='intro__img' src={introImage} />
       </div>
-      <img className='intro__background-effect' src={backgroundEffect} alt='' />
       <img className='intro__background-effect-right' src={backgroundEffect} alt='' />
     </div>
   )
